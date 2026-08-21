@@ -1,0 +1,82 @@
+{
+  "safety_id": "SFTY-20250321-99311",
+  "ghsa_id": "GHSA-mh63-6h87-95cp",
+  "cve_id": "CVE-2025-30204",
+  "package_name": "github.com/golang-jwt/jwt/v4",
+  "review_status": "REVIEWED",
+  "vulnerable_versions": [
+    {
+      "source": "GIT",
+      "versions": [
+        "1.0.0",
+        "1.0.1",
+        "1.0.2",
+        "2.0.0",
+        "2.1.0",
+        "2.2.0",
+        "2.3.0",
+        "2.4.0",
+        "2.5.0",
+        "2.6.0",
+        "2.7.0",
+        "3.0.0",
+        "3.1.0",
+        "3.2.0",
+        "3.2.1",
+        "3.2.2",
+        "4.0.0",
+        "4.1.0",
+        "4.2.0",
+        "4.3.0",
+        "4.4.0",
+        "4.4.1",
+        "4.4.2",
+        "4.4.3",
+        "4.5.0",
+        "4.5.1"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "parser.go",
+      "language": "GO",
+      "definitions": [
+        {
+          "symbol_type": "METHOD",
+          "symbol_name": "ParseUnverified",
+          "signature": "ParseUnverified(tokenString string, claims Claims)",
+          "fully_qualified_parent_name": "jwt.Parser",
+          "fully_qualified_symbol_name": "(*github.com/golang-jwt/jwt/v4.Parser).ParseUnverified",
+          "receiver_type": "POINTER",
+          "vulnerable_versions": [
+            {
+              "source": "GIT",
+              "versions": [
+                "3.2.0",
+                "3.2.1",
+                "3.2.2",
+                "4.0.0",
+                "4.1.0",
+                "4.2.0",
+                "4.3.0",
+                "4.4.0",
+                "4.4.1",
+                "4.4.2",
+                "4.4.3",
+                "4.5.0",
+                "4.5.1"
+              ]
+            }
+          ],
+          "unclassified_versions": [
+            {
+              "source": "GIT",
+              "versions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

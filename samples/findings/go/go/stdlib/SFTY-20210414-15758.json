@@ -1,0 +1,44 @@
+{
+  "safety_id": "SFTY-20210414-15758",
+  "ghsa_id": null,
+  "cve_id": "CVE-2021-27919",
+  "package_name": "stdlib",
+  "review_status": "REVIEWED",
+  "vulnerable_versions": [
+    {
+      "source": "GIT",
+      "versions": [
+        "1.16"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "src/archive/zip/reader.go",
+      "language": "GO",
+      "definitions": [
+        {
+          "symbol_type": "FUNCTION",
+          "symbol_name": "toValidName",
+          "signature": "toValidName(name string)",
+          "fully_qualified_parent_name": "zip",
+          "fully_qualified_symbol_name": "archive/zip.toValidName",
+          "vulnerable_versions": [
+            {
+              "source": "GIT",
+              "versions": [
+                "1.16"
+              ]
+            }
+          ],
+          "unclassified_versions": [
+            {
+              "source": "GIT",
+              "versions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

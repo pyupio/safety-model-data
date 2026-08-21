@@ -1,0 +1,59 @@
+{
+  "safety_id": "SFTY-20220916-34369",
+  "ghsa_id": "GHSA-97p7-w86h-vcf9",
+  "cve_id": "CVE-2022-35935",
+  "package_name": "tensorflow-aarch64",
+  "review_status": "REVIEWED",
+  "vulnerable_versions": [
+    {
+      "source": "PYPI",
+      "versions": [
+        "1.2",
+        "2.7.4"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "tensorflow/python/ops/gen_math_ops.py",
+      "language": "PYTHON",
+      "definitions": [
+        {
+          "symbol_type": "FUNCTION",
+          "symbol_name": "sobol_sample",
+          "signature": null,
+          "fully_qualified_parent_name": null,
+          "fully_qualified_symbol_name": "tensorflow.python.ops.gen_math_ops.sobol_sample",
+          "vulnerable_versions": [
+            {
+              "source": "PYPI",
+              "versions": [
+                "2.7.4"
+              ]
+            }
+          ],
+          "unclassified_versions": [
+            {
+              "source": "PYPI",
+              "versions": []
+            }
+          ],
+          "origins": [
+            {
+              "file": "tensorflow/core/kernels/sobol_op.cc",
+              "language": "CPP",
+              "definitions": [
+                {
+                  "symbol_type": "METHOD",
+                  "symbol_name": "Compute",
+                  "signature": "Compute(OpKernelContext* context)",
+                  "fully_qualified_parent_name": "SobolSampleOp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

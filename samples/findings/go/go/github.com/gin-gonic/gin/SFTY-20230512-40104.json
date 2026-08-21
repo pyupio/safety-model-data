@@ -1,0 +1,77 @@
+{
+  "safety_id": "SFTY-20230512-40104",
+  "ghsa_id": "GHSA-2c4m-59x9-fr2g",
+  "cve_id": "CVE-2023-29401",
+  "package_name": "github.com/gin-gonic/gin",
+  "review_status": "REVIEWED",
+  "vulnerable_versions": [
+    {
+      "source": "GIT",
+      "versions": [
+        "1.4.0",
+        "1.5.0",
+        "1.6.0",
+        "1.6.1",
+        "1.6.2",
+        "1.6.3",
+        "1.7.0",
+        "1.7.1",
+        "1.7.2",
+        "1.7.3",
+        "1.7.4",
+        "1.7.6",
+        "1.7.7",
+        "1.8.0",
+        "1.8.1",
+        "1.8.2",
+        "1.9.0"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "context.go",
+      "language": "GO",
+      "definitions": [
+        {
+          "symbol_type": "METHOD",
+          "symbol_name": "FileAttachment",
+          "signature": "FileAttachment(filepath, filename string)",
+          "fully_qualified_parent_name": "gin.Context",
+          "fully_qualified_symbol_name": "(*github.com/gin-gonic/gin.Context).FileAttachment",
+          "receiver_type": "POINTER",
+          "vulnerable_versions": [
+            {
+              "source": "GIT",
+              "versions": [
+                "1.4.0",
+                "1.5.0",
+                "1.6.0",
+                "1.6.1",
+                "1.6.2",
+                "1.6.3",
+                "1.7.0",
+                "1.7.1",
+                "1.7.2",
+                "1.7.3",
+                "1.7.4",
+                "1.7.6",
+                "1.7.7",
+                "1.8.0",
+                "1.8.1",
+                "1.8.2",
+                "1.9.0"
+              ]
+            }
+          ],
+          "unclassified_versions": [
+            {
+              "source": "GIT",
+              "versions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

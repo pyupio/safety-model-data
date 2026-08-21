@@ -1,0 +1,89 @@
+{
+  "safety_id": "SFTY-20200324-56526",
+  "ghsa_id": "GHSA-6757-jp84-gxfx",
+  "cve_id": "CVE-2020-1747",
+  "package_name": "pyyaml",
+  "review_status": "REVIEWED",
+  "vulnerable_versions": [
+    {
+      "source": "PYPI",
+      "versions": [
+        "3.01",
+        "3.1",
+        "3.02",
+        "3.2",
+        "3.03",
+        "3.3",
+        "3.04",
+        "3.4",
+        "3.05",
+        "3.5",
+        "3.06",
+        "3.6",
+        "3.07",
+        "3.7",
+        "3.08",
+        "3.8",
+        "3.09",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13b1",
+        "3.13rc1",
+        "3.13",
+        "4.2b1",
+        "4.2b2",
+        "4.2b4",
+        "5.1b1",
+        "5.1b3",
+        "5.1b5",
+        "5.1b7",
+        "5.1",
+        "5.1.1",
+        "5.1.2",
+        "5.2b1",
+        "5.2",
+        "5.3b1",
+        "5.3"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "yaml/constructor.py",
+      "language": "PYTHON",
+      "definitions": [
+        {
+          "symbol_type": "METHOD",
+          "symbol_name": "set_python_instance_state",
+          "signature": "set_python_instance_state(self, instance, state)",
+          "fully_qualified_parent_name": "FullConstructor",
+          "fully_qualified_symbol_name": "yaml.constructor.FullConstructor.set_python_instance_state",
+          "vulnerable_versions": [
+            {
+              "source": "PYPI",
+              "versions": [
+                "5.1b5",
+                "5.1b7",
+                "5.1",
+                "5.1.1",
+                "5.1.2",
+                "5.2b1",
+                "5.2",
+                "5.3b1",
+                "5.3"
+              ]
+            }
+          ],
+          "unclassified_versions": [
+            {
+              "source": "PYPI",
+              "versions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

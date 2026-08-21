@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+# Decompressed callgraphs (commit only the .zst artifacts)
+samples/callgraphs/**/*.json
+!samples/callgraphs/**/*excerpt*.json
